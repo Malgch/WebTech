@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -5,18 +6,72 @@
 }
 html {
     font-size: 20px;
-    font-family:'Segoe UI';
+    font-family: 'Monserrat', sans-serif;
     scroll-behavior: smooth;
 }
 a {
     text-decoration: none;
 }
 .container{
-    min-height: 100vh;
+    min-height: 75vh;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+/* Hero section */
+#hero {
+    background-image: url(/images/laptop_chair.jpg);
+    background-size:cover;
+    background-position:0%;
+    position: relative;
+    z-index: 1;
+}
+#hero::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #e9e9e9;
+    opacity: .5;
+    z-index: -1;
+}
+#hero h1{
+    display: block;
+    width: fit-content;
+    font-size: 2rem;
+    position: center;
+    color: black;
+}
+#hero .home_button {
+    display: inline-block;
+    padding: 10px 20px;
+    color: white;
+    background-color: #10c9c3;
+}
+#hero p{
+    display: block;
+    width: fit-content;
+    font-size: 1rem;
+    position: center;
+    color:#808080;
+}
+/* End Hero Section */
+
+
+.about_front{
+    min-height: 25vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#about_us_front_page {
+    background-color: #e9e9e9;
+    size: cover;
 }
 
 #header {
