@@ -12,15 +12,6 @@ html {
 a {
     text-decoration: none;
 }
-.container{
-    min-height: 75vh;
-    width: 100%;
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: wrap;
-}
 
 /* home section */
 #home {
@@ -41,18 +32,20 @@ a {
     opacity: .5;
     z-index: -1;
 }
-#home .home{
-    width: fit-content;
-    max-width: 1000px;
-    margin-left: 70%;
-    padding: 80px 20px;
-    justify-content: flex-start;
-    flex-direction: row-reverse;
-
+#home .home_buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+    margin-left: 80px ;
+}
+#home .section_buttons{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 60%;
 }
 #home .section_button{
-    align-self:flex;
-    display: inline-block;
     padding: 30px 10px;
     font-size: 15px;
     color: black;
@@ -61,6 +54,36 @@ a {
 #home .section_button:hover{
     color:#10c9c3;
 }
+#home .logo_button{
+    max-height: 80px;
+    padding: 10px 10px;
+    align-items: start;
+}
+#home .contact_button {
+    display: inline-block;
+    justify-content: end;
+    align-items: end;
+    padding: 15px 40px;
+    font-size: 15px;
+    position: relative;
+    color: white;
+    background-color: #10c9c3;
+}
+
+.design_develop_container{
+    min-height: 75vh;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+}
+#home .header_design_develop{
+    max-width: 600px;
+    padding: 80px 0px;
+    justify-content: end;
+    flex-direction: row-reverse;
+    margin-right: 50px;
+}
+
 #home h1{
     display: block;
     width: fit-content;
@@ -68,28 +91,20 @@ a {
     font-size: 2rem;
     position: center;
     color: black;
-    /*margin-right: 10rem;*/
-}
-#home .home_button {
-    display: inline-block;
-    padding: 15px 40px;
-    font-size: 15px;
-    position: relative;
-    color: white;
-    background-color: #10c9c3;
 }
 #home p{
     display: block;
     width: fit-content;
     line-height: 150%;
-    height: 8rem;
-    /*margin-right: 20rem;*/
+    height: 6rem;
     font-size: 18px;
     position: center;
     color:#808080;
     word-break: normal;
 }
 /* End home Section */
+
+
 
 /* About us */
 .about_front{
