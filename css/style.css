@@ -83,7 +83,6 @@ a {
     flex-direction: row-reverse;
     margin-right: 50px;
 }
-
 #home h1{
     display: block;
     width: fit-content;
@@ -107,35 +106,44 @@ a {
 
 
 /* About us */
-.about_front{
-    min-height: 25vh;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-#about_us_front_page h1{
-    display: block;
-    height: 3rem;
-    width: fit-content;
-    font-size: 1.5rem;
-    position: center;
-    color: black;
-}
 #about_us_front_page {
     background-color: whitesmoke;
-    size: cover;
+}
+#about_us_front_page .about_container{
+    height:500px;
+    display: flex;
+    margin-left: 50px;
+    margin-right: 50px;
+    flex-direction: row;
+    justify-content: center;
+}
+#about_us_front_page .about_us{
+    width: 800px;
+    margin-top: 110px;
+    margin-bottom: 110px;
+}
+#about_us_front_page h1{
+    height: 50px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
 }
 #about_us_front_page p{
-    display: block;
-    max-width: 1100px;
-    width: fit-content;
-    line-height: 150%;
-    font-size: 0.8rem;
-    position: center;
+    height:fit-content;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
+    word-spacing: 15%;
+    text-align: center;
+    word-wrap: break-word;
     color:#808080;
-    word-break: normal;
+}
+#about_us_front_page .signature{
+    display: block;
+    margin-top: 45px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
 }
 
 /* End About us */
