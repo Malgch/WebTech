@@ -166,7 +166,6 @@ a {
     background: linear-gradient(to right, rgba(255, 255, 255, 1) 50%, rgba(255, 255, 255, 0) 80%);
     z-index: -1;
   }
-
   #professional_skills .professional_skills_container:after {
     content: "";
     position: absolute;
@@ -252,4 +251,31 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
+}
+/* **********icons end************ */
+
+/* Products */
+#producs {
+    background-color: #10c9c3;
+}
+#products .products-container{
+    display: flex;
+    flex-direction: row;
+}
+#products .single-photo{
+    display: block;
+    height: 475px;
+    width: 25%;
+    background-color: beige;
+}
+
+#products .photo_button{
+    padding: 30px 10px;
+    font-size: 15px;
+    color: black;
+    /*background-color: transparent;*/
+}
+#products .photo_button:hover{
+    color:#10c9c3;
+    z-index: +1;
 }
