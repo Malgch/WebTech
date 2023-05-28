@@ -326,7 +326,6 @@ a {
     padding: 80px;
     margin: 0;
     background-color: white;
-
  }
  #work_process .header{    
     display: inline-flex;
@@ -365,3 +364,30 @@ a {
     margin-top: 30px;
     color: rgb(180, 180, 180);
  } 
+  /* WORK PROCESS END */
+
+   /* EXPERTISE */
+   #expertise .expertise_container {
+    background-color: gray;
+    padding: 80px;
+  }
+  
+  #expertise .exp_grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px; /* Adjust the gap between divs as needed */
+  }
+  
+  #expertise .exp_field {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: beige;
+
+  }
+  
+  #expertise .small_icon {
+    flex-shrink: 0;
+  }
