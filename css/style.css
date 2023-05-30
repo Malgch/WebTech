@@ -475,3 +475,62 @@ a {
     flex: 20%
   }
 }  
+/**********************************/
+#contact{
+  background-color: whitesmoke; 
+  padding: 5% 25% 5% 25%;
+}
+#contact .contact_text{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#contact p1{
+  font-size: 16px;
+  font-weight: 500;
+  word-wrap: break-word;
+  color: gray;
+  text-align: center;
+  padding-top: 2%;
+}
+#contact .form_input{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5%;
+}
+#contact .form_contact input, .form_title input, .form_comment input{
+  font-size: 15px;
+  color: black;
+  border: none;
+  margin-bottom: 20px;
+  height: 40px;
+  width: 80%;
+}
+#contact .form_contact input::placeholder, .form_title input::placeholder, .form_comment input::placeholder{
+  border: none;
+}
+#contact .form_contact{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+}
+#contact .form_title input, .form_comment input{
+  width: 100%;
+}
+#contact .form_title {
+  display: flex;
+  width: 80%;
+  box-sizing: border-box;
+}
+#contact .form_comment {
+  display: flex;
+  width: 80%;
+  box-sizing: border-box;
+  height: 110%;
+}
+#contact .contact_comment input{
+  height: 200px;
+}
