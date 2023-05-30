@@ -333,7 +333,6 @@ a {
     position:relative;
     width: 100%;
     margin: 0;
-    background-color:;
  }
 #work_process .video{
     margin-top: 40px;
@@ -421,6 +420,7 @@ a {
     }
   }
   /******************************************/ 
+  /* CITE SECTION */
   #quote{
     background-color: #10c9c3;
     height: auto;
@@ -440,7 +440,38 @@ a {
   }
   #quote p{
     font-size: 14px;
-
     font-weight: bold;
     text-align: center;
   }
+    /******************************************/ 
+    /* LOGOS SECTION */
+    #clients {
+      background-color: white;
+      display: flex;
+      padding: 2% 5% 2% 5%;
+      flex-wrap: wrap;
+    }
+  #clients .clients_container{
+    display: flex;
+    width: 20%;
+    align-items: center;
+    justify-content: center;
+  }
+  #clients .client_logo{
+    padding: 10px;
+  }
+  @media (min-width: 400px) {
+    .clients_container {
+        flex: 50%
+    }
+}
+@media (min-width: 769px) {
+  .clients_container {
+    flex: 25%
+  }
+}  
+@media (min-width: 1025px) {
+  .clients_container {
+    flex: 20%
+  }
+}  
