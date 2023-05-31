@@ -68,6 +68,13 @@ a {
     position: relative;
     color: white;
     background-color: #10c9c3;
+    cursor: pointer;
+    transition: opacity 0.15s, box-shadow 0.15s;
+}
+
+#home .contact_button:hover {
+opacity: 0.8;
+box-shadow: 5px 5px 5px rgb(0,0,0,0.15);
 }
 
 .design_develop_container{
@@ -316,6 +323,9 @@ a {
     font-weight: bold;
     font-stretch: 200%;
  }
+ #products .load:hover{
+  color: gray;
+}
 
  /* WORK PROCESS */
  #work_process .process_container{
@@ -476,17 +486,19 @@ a {
   }
 }  
 /**********************************/
-#contact{
+#contact {
   background-color: whitesmoke; 
   padding: 5% 25% 5% 25%;
 }
-#contact .contact_text{
+
+#contact .contact_text {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-#contact p1{
+
+#contact p1 {
   font-size: 16px;
   font-weight: 500;
   word-wrap: break-word;
@@ -494,43 +506,114 @@ a {
   text-align: center;
   padding-top: 2%;
 }
-#contact .form_input{
+
+#contact .form_input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
   padding-top: 5%;
 }
-#contact .form_contact input, .form_title input, .form_comment input{
+
+#contact .form_contact input,
+#contact .form_comment input {
   font-size: 15px;
-  color: black;
   border: none;
   margin-bottom: 20px;
+  margin-right: 20px;
   height: 40px;
   width: 80%;
 }
-#contact .form_contact input::placeholder, .form_title input::placeholder, .form_comment input::placeholder{
+
+#contact .form_contact input::placeholder,
+#contact .form_title input::placeholder,
+#contact .form_comment input::placeholder {
   border: none;
+  text-align: start;
 }
+
 #contact .form_contact{
   display: flex;
-  flex-direction: row;
   width: 80%;
 }
-#contact .form_title input, .form_comment input{
-  width: 100%;
-}
-#contact .form_title {
-  display: flex;
-  width: 80%;
-  box-sizing: border-box;
-}
+
+#contact .form_title,
 #contact .form_comment {
   display: flex;
   width: 80%;
-  box-sizing: border-box;
-  height: 110%;
 }
-#contact .contact_comment input{
+
+#contact .form_title input {
+  font-size: 15px;
+  border: none;
+  margin-bottom: 20px;
+  margin-right: 20px;
+  height: 40px;
+  width: 100%;
+}
+#contact .form_comment input {
   height: 200px;
+  width: 100%;
+}
+#contact .button_send_message {
+  font-size: 12px;
+  font-weight: 600;
+  color: white;
+  background-color: rgb(0, 199, 199);
+  border: none;
+  width: 150px;
+  height: 45px;
+  cursor: pointer;
+  transition: opacity 0.15s, box-shadow 0.15s;
+}
+
+#contact .button_send_message:hover {
+  opacity: 0.8;
+  box-shadow: 5px 5px 5px rgb(0,0,0,0.15);
+}
+/********************************************/
+
+#footer {
+  display: flex;
+  background-color: rgb(31, 31, 31);
+  padding: 5%;
+}
+#footer .author{
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+#footer h1{
+  font-size: 20px;
+  color: white;
+  padding-bottom: 20px;
+}
+#footer p1{
+  font-size: 15px;
+  color: lightgray;
+  padding-bottom: 8px;
+}
+#footer .author_contact{
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+}
+#footer .footer_links{
+  display: flex;
+  flex-direction: row;
+  width: 20%;
+}
+#footer .block1{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+#footer a{
+  color: lightgray;
+  font-size: 15px;
+  padding-bottom: 5px;
+}
+#footer .footer_socials{
+  display: flex;
+  flex-direction: column;
+  padding-left: 15%;
 }
